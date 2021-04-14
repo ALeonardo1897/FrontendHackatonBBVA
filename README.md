@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
 
+## Status del Proyecto: 1er control
+
+- Pizarra virtual: [Pizarra MIRO](https://miro.com/app/board/o9J_lJjp48A=/)
+- Entregable: [WORD](https://docs.google.com/document/d/1c6WYyuZVt5vUVih_yGgDXeuaZ95xSPvzONU9Z9bdASA/edit?usp=sharing)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
