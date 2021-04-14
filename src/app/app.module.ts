@@ -8,6 +8,11 @@ import { LoginModule } from './pages/login/login.module';
 
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule} from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,9 +20,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FlexLayoutModule, 
     LoginModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

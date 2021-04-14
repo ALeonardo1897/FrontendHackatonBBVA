@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "hackatonbbva-989ac": {
+      "hosting": {
+        "FrontendHackatonBBVA": [
+          "hackatonbbva-989ac"
+        ]
+      }
+    }
+  }
+}
