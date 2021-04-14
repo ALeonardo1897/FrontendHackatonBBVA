@@ -1,0 +1,36 @@
+<mat-card class="login-card mat-elevation-z8 p-10">
+
+    <div>
+
+        <form>
+
+            <h2 class="title-login">Completa tus datos</h2>
+
+            <mat-form-field appearance="fill" class="full-width">
+                <mat-label>Fecha de Nacimiento</mat-label>
+                <input matInput placeholder="dd/mm/yyyy">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="full-width">
+                <mat-label>Departamento</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let department of departments" [value]="department.id">
+                        {{department.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="full-width">
+                <mat-label>Dirección de Domicilio</mat-label>
+                <input matInput>
+            </mat-form-field>
+
+            <button mat-stroked-button class="full-width btn-second">
+                Ingresar
+            </button>
+
+        </form>
+        <br>
+        
+    </div>
+</mat-card>

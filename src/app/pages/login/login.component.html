@@ -1,7 +1,44 @@
-<mat-card class="login-card mat-elevation-z8" >
-    <button mat-stroked-button (click)="signInWithGoogle()">
-        <img src="/assets/google-logo.png" width="25">
-        Acceder con Google
-    </button>
-    <button mat-stroked-button (click)="signOut()">Cerrar Sesión</button>
+<mat-card class="login-card mat-elevation-z8 p-10">
+
+    <div>
+
+        <form [formGroup]="formLogin" (ngSubmit)="login(formLogin.value)">
+
+            <h2 class="title-login">Bienvenido</h2>
+
+            <mat-form-field appearance="fill" class="full-width">
+                <mat-label>Tipo de Documento</mat-label>
+                <mat-select formControlName="typeDocument">
+                    <mat-option *ngFor="let typeDoc of typeDocuments" [value]="typeDoc.id">
+                        {{typeDoc.name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error *ngIf="f.typeDocument.errors?.required">
+                    Campo <strong>requerido</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="full-width">
+                <mat-label>Número de Documento</mat-label>
+                <input matInput formControlName="documentNumber">
+                <mat-error *ngIf="f.documentNumber.errors?.required">
+                    Campo <strong>requerido</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <button mat-stroked-button class="full-width btn-second" style="margin-top: 10px;">
+                Ingresar
+            </button>
+
+        </form>
+        <br>
+        <div>
+            <button mat-stroked-button (click)="signInWithGoogle()" class="full-width">
+                <img src="/assets/google-logo.png" width="25">
+                Acceder con Google
+            </button>
+            <button *ngIf="false" mat-stroked-button (click)="signOut()">Cerrar Sesión</button>
+        </div>
+
+    </div>
 </mat-card>

@@ -12,16 +12,19 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule} from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { WelcomeModule } from './pages/welcome/welcome.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule, 
     LoginModule,
+    WelcomeModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     AngularFireModule.initializeApp(environment.firebase),
