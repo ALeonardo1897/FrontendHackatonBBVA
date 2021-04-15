@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Status del Proyecto: 1er control
 
-- Presentación: [Google Slides] (https://docs.google.com/presentation/d/156zjvcNQTcHEr8EqQ_2VEoK2379fFoYPbhz9nwXyz4I/edit#slide=id.gd2271b5493_1_0 ) 
+- Presentación: [Google Slides](https://docs.google.com/presentation/d/156zjvcNQTcHEr8EqQ_2VEoK2379fFoYPbhz9nwXyz4I/edit#slide=id.gd2271b5493_1_0) 
 - Pizarra virtual: [Pizarra MIRO](https://miro.com/app/board/o9J_lJjp48A=/)
 - Entregable: [WORD](https://docs.google.com/document/d/1c6WYyuZVt5vUVih_yGgDXeuaZ95xSPvzONU9Z9bdASA/edit?usp=sharing)
 
